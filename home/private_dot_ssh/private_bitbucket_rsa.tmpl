@@ -1,3 +1,13 @@
 {{- if .personal -}}
-{{ (index (lastpassRaw "ssh_bitbucket_rsa") 0).note }}
+{{ if (index .ssh_keys "bitbucket_rsa") }}
+{{- .ssh_keys.bitbucket_rsa -}}
+{{ else }}
+# Add your Bitbucket SSH private key here
+# You can use 'chezmoi edit ~/.ssh/bitbucket_rsa' to add your key
+# Or set it via chezmoi data: ssh_keys.bitbucket_rsa
+{{ end }}
+{{- else -}}
+# Add your Bitbucket SSH private key here
+# You can use 'chezmoi edit ~/.ssh/bitbucket_rsa' to add your key
+# Or set it via chezmoi data: ssh_keys.bitbucket_rsa
 {{- end -}}

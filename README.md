@@ -4,17 +4,17 @@
 🚀 NEVER SKIP THE README - YOUR JOURNEY STARTS HERE! 🚀
 ```
 
-<h1>🏠 HorneroConfig</h1>
-<h3>✨ The Ultimate Linux Desktop Configuration Framework ✨</h3>
+<h1>🏠 HorneroConfig Template</h1>
+<h3>✨ The Ultimate Linux Desktop Configuration Framework Template ✨</h3>
 
 **Intelligent • Beautiful • Powerful • Seamless**
+
+> **📝 Note:** This is a template repository based on [ulises-jeremias/dotfiles](https://github.com/ulises-jeremias/dotfiles). Fork this repository to create your own personalized dotfiles setup while maintaining the core framework functionality.
 
 [📖 Documentation](https://ulises-jeremias.github.io/dotfiles) •
 [🎨 Gallery](#-gallery) •
 [🚀 Quick Start](#-quick-installation) •
 [🤝 Contributing](CONTRIBUTING.md)
-
----
 
 [![Awesome](https://awesome.re/mentioned-badge.svg)](https://github.com/PandaFoss/Awesome-Arch)
 [![AUR Stable](https://img.shields.io/aur/version/dots-stable?label=AUR+Stable&style=for-the-badge)](https://aur.archlinux.org/packages/dots-stable)
@@ -22,17 +22,17 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
 [![Arch Linux](https://img.shields.io/badge/Arch%20Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white)](https://archlinux.org/)
 
-<img alt="" align="right" width="400px" src="./static/collage.png"/>
-
 </div>
-
----
 
 ## 🌟 **What is HorneroConfig?**
 
-**HorneroConfig** is a cutting-edge dotfiles framework that transforms your Linux desktop into a **masterpiece of functionality and beauty**. Named after the industrious hornero bird 🐦, renowned for its skillful nest-building, this framework empowers you to craft the perfect digital workspace.
+<img alt="" align="right" width="400px" src="./static/collage.png"/>
 
-### 🎯 **Why Choose HorneroConfig?**
+**HorneroConfig Template** is a cutting-edge dotfiles framework template that provides you with a solid foundation to transform your Linux desktop into a **masterpiece of functionality and beauty**. Named after the industrious hornero bird 🐦, renowned for its skillful nest-building, this template empowers you to craft the perfect digital workspace.
+
+This template is based on the original [HorneroConfig dotfiles](https://github.com/ulises-jeremias/dotfiles) and provides a clean, customizable starting point for your own dotfiles journey.
+
+### 🎯 **Why Choose HorneroConfig Template?**
 
 - 🧠 **Smart Color Intelligence** - Revolutionary color system that adapts to any theme
 - 🎨 **Beautiful Rice Themes** - 12+ stunning pre-configured desktop themes
@@ -41,8 +41,7 @@
 - 🪟 **Multi-WM Support** - Works with i3, Openbox, XFCE4, and more
 - 🛡️ **Security-First** - Built-in security auditing and hardening
 - 📦 **Zero Maintenance** - Powered by chezmoi for seamless updates
-
----
+- 🔄 **Template Ready** - Fork and customize without losing core functionality
 
 ## ✨ **Key Features**
 
@@ -71,8 +70,6 @@ Our **game-changing smart colors technology** automatically analyzes your color 
 - **⚡ Auto-Application**: Instantly applies to Polybar, EWW, i3, and all scripts
 - **🔄 Live Updates**: Colors refresh automatically when you change wallpapers
 
----
-
 ## 🎨 **Gallery**
 
 <div align="center">
@@ -91,22 +88,34 @@ Our **game-changing smart colors technology** automatically analyzes your color 
 
 </div>
 
----
-
 ## 🚀 **Quick Installation**
 
-### ⚡ **One-Line Install** (Recommended)
+### ⚡ **Template Setup** (Recommended)
 
-Transform your desktop instantly with a single command:
+1. **Fork this repository** to create your own dotfiles:
+
+   ```bash
+   # Replace <your-username> with your GitHub username
+   git clone https://github.com/<your-username>/dotfiles-template ~/.dotfiles
+   ```
+
+2. **Install using the template**:
+   ```bash
+   cd ~/.dotfiles && ./install.sh
+   ```
+
+### 🔧 **Original Framework Setup**
+
+If you want to use the original dotfiles directly:
 
 ```bash
-sh -c "$(wget -qO- "https://github.com/ulises-jeremias/dotfiles/blob/main/scripts/install_dotfiles.sh?raw=true")"
+sh -c "$(wget -qO- "https://github.com/ulises-jeremias/dotfiles-template/blob/main/scripts/install_dotfiles.sh?raw=true")"
 ```
 
 > 💡 **Alternative with curl:**
 >
 > ```bash
-> sh -c "$(curl -fsSL "https://github.com/ulises-jeremias/dotfiles/blob/main/scripts/install_dotfiles.sh?raw=true")"
+> sh -c "$(curl -fsSL "https://github.com/ulises-jeremias/dotfiles-template/blob/main/scripts/install_dotfiles.sh?raw=true")"
 > ```
 
 ### 📦 **Arch Linux Users** (AUR)
@@ -127,7 +136,11 @@ yay -S dots-git
 #### Using Chezmoi (Recommended)
 
 ```bash
-chezmoi init --apply ulises-jeremias --source ~/.dotfiles
+# For your forked template repository
+chezmoi init --apply <your-username> --source ~/.dotfiles
+
+# For the original repository (not recommended for personal use)
+chezmoi init --apply ulises-jeremias/dotfiles-template --source ~/.dotfiles
 ```
 
 #### From Source
@@ -145,8 +158,6 @@ cd /tmp/dots-stable && makepkg -si
 ```
 
 </details>
-
----
 
 ## 🎨 **Rice Themes Collection**
 
@@ -191,8 +202,6 @@ dots rice apply landscape-dark
 dots rice list
 ```
 
----
-
 ## 🔧 **Core Applications**
 
 <div align="center">
@@ -210,8 +219,6 @@ dots rice list
 | 🎛️ **Widgets**        | [EWW](https://github.com/elkowar/eww)                                              | Modern system widgets |
 
 </div>
-
----
 
 ## 🛠️ **Powerful Automation**
 
@@ -257,8 +264,6 @@ dots smart-colors --concept=error --format=hex
 dots smart-colors --concept=success --format=rgb
 ```
 
----
-
 ## 🛡️ **Security & Privacy**
 
 ### 🔒 **Built-in Security Features**
@@ -278,8 +283,6 @@ dots security-audit --apply
 # Check system security status
 dots security-audit --status
 ```
-
----
 
 ## 🧪 **Testing & Development**
 
@@ -317,8 +320,6 @@ pre-commit install
 pre-commit run --all-files
 ```
 
----
-
 ## 🌍 **Platform Support**
 
 <div align="center">
@@ -334,8 +335,6 @@ pre-commit run --all-files
 
 </div>
 
----
-
 ## 📖 **Documentation**
 
 Comprehensive guides for every aspect:
@@ -347,8 +346,6 @@ Comprehensive guides for every aspect:
 - 🎛️ [**EWW Widgets**](https://ulises-jeremias.github.io/dotfiles/#EWW-Widgets) - Modern widgets
 - 🔧 [**Scripts Guide**](https://ulises-jeremias.github.io/dotfiles/#Dots-Scripts) - Automation tools
 - 🛡️ [**Security**](https://ulises-jeremias.github.io/dotfiles/#Security) - Privacy & security
-
----
 
 ## 🤝 **Contributing**
 
@@ -372,8 +369,6 @@ _Made with ❤️ by our amazing community_
 
 </div>
 
----
-
 <div align="center">
 
 ### 💝 **Show Your Support**
@@ -381,8 +376,6 @@ _Made with ❤️ by our amazing community_
 If HorneroConfig has improved your Linux experience, consider:
 
 ⭐ **Star this repository** • 🐦 **Share on social media** • 🤝 **Contribute to the project**
-
----
 
 **🏠 HorneroConfig - Building the perfect digital nest, one configuration at a time**
 

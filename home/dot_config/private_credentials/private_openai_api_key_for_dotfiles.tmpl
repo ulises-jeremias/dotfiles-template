@@ -1,3 +1,9 @@
 {{- if .personal -}}
-{{ (index (lastpassRaw "openai_api_key_for_dotfiles") 0).note }}
+{{ if (index .credentials "openai_api_key") }}
+{{- .credentials.openai_api_key -}}
+{{ else }}
+your_openai_api_key_here
+{{ end }}
+{{- else -}}
+your_openai_api_key_here
 {{- end -}}

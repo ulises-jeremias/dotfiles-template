@@ -1,3 +1,9 @@
 {{- if .personal -}}
-{{ (index (lastpassRaw "github_access_token_notifications") 0).note }}
+{{ if (index .credentials "github_access_token_notifications") }}
+{{- .credentials.github_access_token_notifications -}}
+{{ else }}
+your_github_token_here
+{{ end }}
+{{- else -}}
+your_github_token_here
 {{- end -}}

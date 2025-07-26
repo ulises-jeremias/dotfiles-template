@@ -1,3 +1,13 @@
 {{- if .personal -}}
-{{ (index (lastpassRaw "ssh_personal_rsa") 0).note }}
+{{ if (index .ssh_keys "personal_rsa") }}
+{{- .ssh_keys.personal_rsa -}}
+{{ else }}
+# Add your personal SSH private key here
+# You can use 'chezmoi edit ~/.ssh/personal_rsa' to add your key
+# Or set it via chezmoi data: ssh_keys.personal_rsa
+{{ end }}
+{{- else -}}
+# Add your personal SSH private key here
+# You can use 'chezmoi edit ~/.ssh/personal_rsa' to add your key
+# Or set it via chezmoi data: ssh_keys.personal_rsa
 {{- end -}}
