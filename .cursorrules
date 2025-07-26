@@ -47,7 +47,7 @@ All `dots-*` scripts should use EasyOptions for argument parsing:
 ## Copyright (C) 2019-2025 Ulises Jeremias Cornejo Fandos
 ## Licensed under MIT.
 ##
-## Check full documentation at: https://github.com/ulises-jeremias/dotfiles/wiki
+## Check full documentation at: https://github.com/ulises-jeremias/dotfiles-template/wiki
 ##
 ## Brief description of script functionality
 ##

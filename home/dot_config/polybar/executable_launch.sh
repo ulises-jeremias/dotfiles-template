@@ -6,7 +6,7 @@
 ## Enhanced Polybar Launch Script
 ## Provides robust bar management with comprehensive error handling and logging
 ##
-## Check full documentation at: https://github.com/ulises-jeremias/dotfiles/wiki
+## Check full documentation at: https://github.com/ulises-jeremias/dotfiles-template/wiki
 ##
 ## Usage:
 ##     @script.name [OPTIONS] [COMMAND] [BARS...]

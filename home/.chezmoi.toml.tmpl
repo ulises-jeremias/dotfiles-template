@@ -34,10 +34,8 @@
 {{- end -}}
 
 {{- if not $ephemeral -}}
-{{-   if eq $hostname "hornero" -}}
-{{-     $personal = true -}}
-{{-     $docker = true -}}
-{{-   else if $interactive -}}
+{{-   if $interactive -}}
+{{-     $personal = promptBoolOnce . "personal" "Enable personal configurations (SSH keys, credentials)" -}}
 {{-     $headless = promptBoolOnce . "headless" "headless" -}}
 {{-     $ephemeral = promptBoolOnce . "ephemeral" "ephemeral" -}}
 {{-     if not $ephemeral -}}

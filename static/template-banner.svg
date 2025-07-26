@@ -1,0 +1,87 @@
+<svg width="800" height="200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cardGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0.05" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="200" fill="url(#bgGradient)" rx="15" ry="15"/>
+  
+  <!-- Background pattern -->
+  <pattern id="dots" patternUnits="userSpaceOnUse" width="20" height="20">
+    <circle cx="10" cy="10" r="1" fill="rgba(255,255,255,0.1)"/>
+  </pattern>
+  <rect width="800" height="200" fill="url(#dots)" rx="15" ry="15"/>
+  
+  <!-- Main card -->
+  <rect x="20" y="20" width="760" height="160" fill="url(#cardGradient)" rx="10" ry="10" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  
+  <!-- Icon section -->
+  <g transform="translate(40, 40)">
+    <!-- Hornero bird icon -->
+    <circle cx="40" cy="40" r="35" fill="#fbbf24" opacity="0.2"/>
+    <circle cx="40" cy="40" r="30" fill="#f59e0b"/>
+    <path d="M25 35 Q40 25 55 35 Q50 45 40 50 Q30 45 25 35 Z" fill="#92400e"/>
+    <circle cx="35" cy="35" r="3" fill="#ffffff"/>
+    <path d="M45 40 Q50 38 55 40" stroke="#92400e" stroke-width="2" fill="none"/>
+  </g>
+  
+  <!-- Arrow pointing right -->
+  <g transform="translate(120, 60)">
+    <path d="M0 20 L20 10 L20 15 L40 15 L40 25 L20 25 L20 30 Z" fill="#10b981" filter="url(#glow)"/>
+  </g>
+  
+  <!-- Template icon -->
+  <g transform="translate(180, 40)">
+    <rect x="0" y="0" width="50" height="60" fill="rgba(255,255,255,0.1)" rx="5" ry="5" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+    <rect x="5" y="10" width="40" height="2" fill="#06b6d4"/>
+    <rect x="5" y="18" width="30" height="2" fill="#06b6d4"/>
+    <rect x="5" y="26" width="35" height="2" fill="#06b6d4"/>
+    <rect x="5" y="34" width="25" height="2" fill="#06b6d4"/>
+    <rect x="5" y="42" width="40" height="2" fill="#06b6d4"/>
+    <text x="25" y="55" text-anchor="middle" fill="#06b6d4" font-family="Arial, sans-serif" font-size="8" font-weight="bold">TEMPLATE</text>
+  </g>
+  
+  <!-- Main text -->
+  <g transform="translate(260, 50)">
+    <text x="0" y="0" fill="#ffffff" font-family="Arial, sans-serif" font-size="24" font-weight="bold">
+      🔥 Template Repository
+    </text>
+    <text x="0" y="25" fill="#e5e7eb" font-family="Arial, sans-serif" font-size="14">
+      Based on the original HorneroConfig dotfiles
+    </text>
+    <text x="0" y="45" fill="#10b981" font-family="Arial, sans-serif" font-size="12" font-weight="bold">
+      📋 Follow TEMPLATE_SETUP.md for step-by-step setup
+    </text>
+  </g>
+  
+  <!-- Call to action -->
+  <g transform="translate(580, 60)">
+    <rect x="0" y="0" width="180" height="35" fill="#10b981" rx="17" ry="17" filter="url(#glow)"/>
+    <text x="90" y="23" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="14" font-weight="bold">
+      🚀 Get Started Now!
+    </text>
+  </g>
+  
+  <!-- Decorative elements -->
+  <circle cx="720" cy="50" r="3" fill="#fbbf24" opacity="0.6"/>
+  <circle cx="735" cy="40" r="2" fill="#f59e0b" opacity="0.8"/>
+  <circle cx="740" cy="60" r="4" fill="#06b6d4" opacity="0.5"/>
+  
+  <!-- Bottom accent line -->
+  <rect x="20" y="175" width="760" height="2" fill="url(#bgGradient)" opacity="0.3"/>
+</svg>

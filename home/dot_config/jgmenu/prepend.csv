@@ -1,5 +1,5 @@
 Dotfiles Config,exo-open ~/.dotfiles,gnome-control-center
-Dotfiles Documentation,exo-open https://github.com/ulises-jeremias/dotfiles/wiki,help
+Dotfiles Documentation,exo-open https://github.com/ulises-jeremias/dotfiles-template/wiki,help
 ^sep()
 Web browser,exo-open --launch WebBrowser,web-browser
 File manager,exo-open --launch FileManager,system-file-manager

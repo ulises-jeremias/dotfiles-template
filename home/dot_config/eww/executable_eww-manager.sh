@@ -6,7 +6,7 @@
 ## Universal EWW Widget Manager
 ## Provides centralized management for all EWW components
 ##
-## Check full documentation at: https://github.com/ulises-jeremias/dotfiles/wiki
+## Check full documentation at: https://github.com/ulises-jeremias/dotfiles-template/wiki
 ##
 ## Usage:
 ##     @script.name [OPTIONS] [COMMAND] [COMPONENT] [WIDGETS...]

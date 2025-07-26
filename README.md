@@ -11,6 +11,12 @@
 
 > **📝 Note:** This is a template repository based on [ulises-jeremias/dotfiles](https://github.com/ulises-jeremias/dotfiles). Fork this repository to create your own personalized dotfiles setup while maintaining the core framework functionality.
 
+<div align="center">
+  
+![Template Banner](./static/template-banner.svg)
+
+</div>
+
 [📖 Documentation](https://ulises-jeremias.github.io/dotfiles) •
 [🎨 Gallery](#-gallery) •
 [🚀 Quick Start](#-quick-installation) •
@@ -87,6 +93,31 @@ Our **game-changing smart colors technology** automatically analyzes your color 
 <img src="./static/screenshot-launchpad.png" alt="Rofi Launcher" width="400px"/> <img src="./static/screenshot-spotlight-dark.png" alt="Spotlight Dark" width="400px"/>
 
 </div>
+
+---
+
+## 📋 **Template Information**
+
+This is a **template repository** - a clean, reusable version of the original [HorneroConfig dotfiles](https://github.com/ulises-jeremias/dotfiles). 
+
+### 🔄 **What's Different in the Template?**
+
+- ✅ **Personal credentials removed** - No LastPass dependencies
+- ✅ **Generic placeholders** - Easy to customize for your needs  
+- ✅ **Template-ready SSH keys** - Placeholder files for your keys
+- ✅ **Configurable API keys** - Set your own service tokens
+- ✅ **Clean git history** - Start fresh with your own commits
+
+### 📝 **Quick Template Setup**
+
+1. **Fork this repository** on GitHub
+2. **Clone your fork**: `git clone https://github.com/<your-username>/dotfiles-template ~/.dotfiles`
+3. **Run setup**: `cd ~/.dotfiles && ./install.sh`
+4. **Customize**: Follow the [Template Setup Guide](TEMPLATE_SETUP.md)
+
+> 💡 **New to dotfiles?** Check the [Template Setup Guide](TEMPLATE_SETUP.md) for detailed instructions.
+
+---
 
 ## 🚀 **Quick Installation**
 
@@ -361,8 +392,8 @@ Join our amazing community! We welcome:
 
 <div align="center">
 
-<a href="https://github.com/ulises-jeremias/dotfiles/contributors">
-  <img src="https://contrib.rocks/image?repo=ulises-jeremias/dotfiles" alt="Contributors" />
+<a href="https://github.com/ulises-jeremias/dotfiles-template/contributors">
+  <img src="https://contrib.rocks/image?repo=ulises-jeremias/dotfiles-template" alt="Contributors" />
 </a>
 
 _Made with ❤️ by our amazing community_

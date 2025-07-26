@@ -40,7 +40,7 @@ You are working on **HorneroConfig**, a comprehensive Linux dotfiles framework n
 ##
 ## Brief description of script functionality
 ##
-## Check full documentation at: https://github.com/ulises-jeremias/dotfiles/wiki
+## Check full documentation at: https://github.com/ulises-jeremias/dotfiles-template/wiki
 ##
 ## Usage:
 ##     @script.name [OPTIONS] [ARGUMENTS...]

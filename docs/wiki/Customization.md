@@ -1,4 +1,6 @@
-# 🎨 Dotfiles Customization Guide
+# � Dotfiles Template Customization Guide
+
+This template repository is designed to be a starting point for your personalized dotfiles setup. You're encouraged to **fork it**, adapt it to your needs, and maintain your own GitHub repository with your custom configurations.🎨 Dotfiles Customization Guide
 
 This repository is designed to be a starting point for your personalized dotfiles setup. You’re encouraged to **fork it**, adapt it to your needs, and maintain your own GitHub repository with your custom configurations.
 
@@ -14,15 +16,14 @@ This repository is designed to be a starting point for your personalized dotfile
 Create your own version of the dotfiles:
 
 ```sh
-git clone https://github.com/<your-username>/dotfiles.git ~/.dotfiles
+git clone https://github.com/<your-username>/dotfiles-template.git ~/.dotfiles
 ```
 
 ### 2. Initialize Chezmoi
 
 > [!IMPORTANT]
-> This dotfiles setup includes references to my personal LastPass vault for storing sensitive information (like tokens or secrets).  
-> If you plan to use or adapt these configs, make sure to **replace or remove** any references to LastPass and configure your own preferred secret management method — such as Bitwarden, 1Password, `pass`, `gopass`, or `chezmoi's built-in encrypted secrets`.  
-> Double-check any scripts or encrypted templates (`*.tmpl`) before applying changes.
+> This template has been sanitized to remove personal credentials and LastPass references. You can now safely use your own preferred secret management method — such as Bitwarden, 1Password, `pass`, `gopass`, or `chezmoi's built-in encrypted secrets`.  
+> The template uses placeholder values for credentials that you should replace with your own.
 
 Link your forked dotfiles directory with chezmoi:
 

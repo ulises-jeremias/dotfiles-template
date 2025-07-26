@@ -13,5 +13,5 @@ The _binary_ ones is **reversible**, let alone the _source-code_.
 
 ## Reporting a Vulnerability
 
-Please [open the discussion](https://github.com/ulises-jeremias/dotfiles/discussions) first to discuss
+Please [open the discussion](https://github.com/ulises-jeremias/dotfiles-template/discussions) first to discuss
 mitigating exploitable vulnerabilities or bugs in shell-scripts or otherwise.
