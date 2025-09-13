@@ -151,7 +151,7 @@ Here's a quick checklist of what you might want to personalize:
 
 > **⚠️ Important**: Always test your dotfiles in a safe environment (like the playground) after making these changes to ensure everything still works correctly.
 
-## �🔐 Setting Up Credentials (Optional)
+## 🔐 Setting Up Credentials (Optional)
 
 If you enabled personal mode, you can set up your credentials:
 
